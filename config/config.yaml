@@ -1,0 +1,26 @@
+database:
+  driver: postgres
+  user: postgres
+  password: PostgresPassword
+  dbname: urldb
+  ssl_mode: disable
+  max_idle_conns: 5
+  max_open_conns: 5
+
+redis:
+  address: "http://localhost:6379"
+  password: ""
+  db: 0
+
+server:
+  address: ":8080"
+  read_timeout: 5s
+  write_timeout: 5s
+
+app:
+  base_url: "http://localhost:8080"
+  default_expiration: 24h
+  cleanup_interval: 2h
+
+shortcode:
+  length: 6
